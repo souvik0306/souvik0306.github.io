@@ -126,7 +126,88 @@
     -webkit-transition: opacity .2s ease-in-out;
   }
   
-  span.highlight {
+span.highlight {
     background-color: #ffffd0;
+  }
+
+  /* Layout and responsiveness */
+  .profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .profile-text {
+    flex: 1;
+  }
+
+  .profile-photo {
+    max-width: 40%;
+  }
+
+  .profile-photo img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .publications {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .publications h2 {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+  }
+
+  .pub-entry {
+    display: flex;
+    background-color: #ffffd0;
+    padding: 25px;
+    margin-bottom: 20px;
+  }
+
+  .pub-entry img {
+    width: 180px;
+    height: 140px;
+    margin-right: 20px;
+  }
+
+  .pub-text {
+    flex: 1;
+  }
+
+  @media (max-width: 600px) {
+    .profile-header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .profile-photo {
+      max-width: 60%;
+    }
+
+    body,
+    p,
+    a,
+    strong,
+    papertitle {
+      font-size: 15px;
+    }
+
+    .pub-entry {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .pub-entry img {
+      margin: 0 0 10px 0;
+    }
   }
   
