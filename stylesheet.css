@@ -177,37 +177,97 @@ span.highlight {
     width: 180px;
     height: 140px;
     margin-right: 20px;
+    object-fit: cover;
   }
 
   .pub-text {
     flex: 1;
   }
 
-  @media (max-width: 600px) {
+  /* Responsive images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Mobile optimization */
+  @media (max-width: 768px) {
     .profile-header {
       flex-direction: column;
       text-align: center;
+      padding: 15px;
     }
 
     .profile-photo {
-      max-width: 60%;
+      max-width: 70%;
     }
 
     body,
     p,
     a,
-    strong,
-    papertitle {
+    strong {
       font-size: 15px;
+    }
+
+    papertitle {
+      font-size: 13px;
+    }
+
+    name {
+      font-size: 28px;
+    }
+
+    .publications {
+      padding: 15px;
     }
 
     .pub-entry {
       flex-direction: column;
       align-items: center;
+      padding: 20px;
     }
 
     .pub-entry img {
-      margin: 0 0 10px 0;
+      margin: 0 0 15px 0;
+      max-width: 200px;
+    }
+  }
+
+  /* Small mobile devices */
+  @media (max-width: 480px) {
+    .profile-header {
+      padding: 10px;
+    }
+
+    .profile-photo {
+      max-width: 80%;
+    }
+
+    body,
+    p,
+    a,
+    strong {
+      font-size: 14px;
+    }
+
+    papertitle {
+      font-size: 12px;
+    }
+
+    name {
+      font-size: 24px;
+    }
+
+    .publications {
+      padding: 10px;
+    }
+
+    .pub-entry {
+      padding: 15px;
+    }
+
+    .pub-entry img {
+      max-width: 160px;
     }
   }
   
