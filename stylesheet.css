@@ -131,11 +131,6 @@ span.highlight {
   }
 
   /* Layout and responsiveness */
-  body {
-    visibility: visible;
-    opacity: 1;
-  }
-
   .profile-header {
     display: flex;
     align-items: center;
@@ -144,17 +139,13 @@ span.highlight {
     margin: 0 auto;
     padding: 20px;
     gap: 20px;
-    min-height: 300px;
   }
 
   .profile-text {
     flex: 1;
-    min-width: 0;
   }
 
   .profile-photo {
-    flex-shrink: 0;
-    width: 280px;
     max-width: 40%;
   }
 
@@ -162,7 +153,6 @@ span.highlight {
     width: 100%;
     height: auto;
     max-width: 100%;
-    aspect-ratio: 4032 / 3024;
   }
 
   .publications {
